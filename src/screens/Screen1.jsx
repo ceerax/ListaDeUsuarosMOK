@@ -101,7 +101,7 @@ const Screen1 = () => {
   return (
     <div>
       <div className="title">
-        <h1>Listado de usuarios</h1>
+        <h1 style={{ marginTop: 0 }}>Listado de usuarios</h1>
       </div>
       {loading ? (
         <div>Cargando...</div>

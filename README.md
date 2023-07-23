@@ -19,7 +19,9 @@ Mejoras Realizadas
 
     Renderizado Condicional: Se utilizó renderizado condicional para mostrar mensajes de "Cargando..." y "No se encontraron resultados" según el estado actual de los datos.
 
-     Scroll infinito: para que el usuario pueda ver el contenido de una manera optima sin que se le cargue todo a la vez
+    Scroll infinito: para que el usuario pueda ver el contenido de una manera optima sin que se le cargue todo a la vez.
+
+    Codigo comentado .
 
 pasos que se logro completar
 
