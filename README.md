@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+Lista de Usuarios - Aplicación de React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Esta es una aplicación de React que muestra un listado de usuarios con funcionalidades de filtrado, ordenamiento y paginación de resultados. Permite a los usuarios interactuar con la lista y realizar acciones como eliminar y restaurar elementos.
+Funcionalidades
 
-## Available Scripts
+    Carga de datos desde un API externo.
+    Filtrado de usuarios por país.
+    Ordenamiento alfabetico por país .
+    Eliminación de usuarios de la lista y restauración de elementos eliminados.
+    Scroll infinito para cargar más resultados automáticamente.
 
-In the project directory, you can run:
+Mejoras Realizadas
 
-### `npm start`
+    Componentización: Se dividió la lógica y la interfaz de usuario en componentes más pequeños y reutilizables, como el botón personalizado y la lógica de scroll infinito.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    Optimización: Se implementó una lógica de paginación mediante scroll infinito para mejorar el rendimiento y reducir la carga inicial de datos.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+    Reutilización de Funciones: Se crearon funciones de utilidad para el manejo del ordenamiento y filtrado de datos, lo que hace que el código sea más legible y fácil de mantener.
 
-### `npm test`
+    Renderizado Condicional: Se utilizó renderizado condicional para mostrar mensajes de "Cargando..." y "No se encontraron resultados" según el estado actual de los datos.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+     Scroll infinito: para que el usuario pueda ver el contenido de una manera optima sin que se le cargue todo a la vez
 
-### `npm run build`
+pasos que se logro completar
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    Carga de datos desde un API externo con 100 elementos. "esta fue una de la mejora que realice con el scroll infinito"
+    Visualización de la data en formato de tabla, con campos como Foto, Nombre, Apellido y País.
+    Botón para añadir color a la tabla, sombreando líneas pares con el color #112233 y líneas impares con el color #556677.
+    Botón para ordenar alfabéticamente la tabla por país.
+    Botón en cada línea de la tabla para eliminar usuarios individualmente.
+    Botón para restaurar la tabla a su estado original y recuperar los registros borrados.
+    Corrección de bugs y optimización del código.
+    Botón para filtrar la data por país sin realizar un ordenamiento innecesario cada vez que se aplica un filtro.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+paso no logrado
+Ordena la data al clickear la columna header (titulo) de cada campo. "lo iba crear como un un custom hook con la logica del Botón para ordenar alfabéticamente la tabla por país"
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Instrucciones para Ejecutar el Proyecto
 
-### `npm run eject`
+    Clona el repositorio en tu máquina local.
+    Asegúrate de tener Node.js y npm instalados en tu sistema.
+    Abre una terminal en la carpeta raíz del proyecto.
+    Ejecuta npm install para instalar las dependencias del proyecto.
+    Ejecuta npm start para iniciar la aplicación en un servidor local.
+    Abre tu navegador web y visita http://localhost:3000 para ver la aplicación en funcionamiento.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+¡Listo! Ahora podrás explorar la lista de usuarios, realizar búsquedas, ordenar los datos y probar todas las funcionalidades implementadas.
